@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map-mepz
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/push-pyxis-qvdf-tenant/appstudio/dc-metro-map-mepz@sha256:fc07d40f51edfee9947d59e0eca42100ec705539e3cf2757e727bd188ee64d68
+        name: my-nodejs
+        resources: {}
+status: {}
